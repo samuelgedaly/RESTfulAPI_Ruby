@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  type: 
+  story: MyText
+  event_date: MyString
+  donations: 1
+
+two:
+  name: MyString
+  type: 
+  story: MyText
+  event_date: MyString
+  donations: 1
