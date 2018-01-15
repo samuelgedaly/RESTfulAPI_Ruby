@@ -1,0 +1,531 @@
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1826001336522020910)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCauses (20180114160420)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (31.2ms)[0m  [1m[35mCREATE TABLE "causes" ("id" bigserial primary key, "name" character varying, "type" character varying, "story" text, "event_date" character varying, "donations" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180114160420"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1826001336522020910)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1826001336522020910)[0m
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1826001336522020910)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (23.7ms)[0m  [1m[32mINSERT INTO "causes" ("name", "story", "event_date", "donations", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Elmira Homenick"], ["story", "Quibusdam nemo atque dolorum omnis."], ["event_date", "2018-01-15"], ["donations", 57], ["created_at", "2018-01-15 16:23:56.529787"], ["updated_at", "2018-01-15 16:23:56.529787"]]
+  [1m[35m (33.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "causes" ("name", "story", "event_date", "donations", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Saul Heathcote"], ["story", "Doloremque qui voluptatem placeat dicta id et voluptas fugiat."], ["event_date", "2018-01-13"], ["donations", 10], ["created_at", "2018-01-15 16:23:56.592919"], ["updated_at", "2018-01-15 16:23:56.592919"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "causes" ("name", "story", "event_date", "donations", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Jaron McClure III"], ["story", "Labore corrupti dolores sed quis sit quis nisi sed."], ["event_date", "2018-01-15"], ["donations", 48], ["created_at", "2018-01-15 16:23:56.595577"], ["updated_at", "2018-01-15 16:23:56.595577"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 11:35:14 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/samuelgedaly/Sites/mycauses/app/controllers/api/v1/causes_controller.rb:9: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/api/v1/causes_controller.rb:9: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 11:35:51 -0500
+  
+SyntaxError (/Users/samuelgedaly/Sites/mycauses/app/controllers/api/v1/causes_controller.rb:9: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/api/v1/causes_controller.rb:9: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 11:36:20 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/samuelgedaly/Sites/mycauses/app/controllers/api/v1/causes_controller.rb:9: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/api/v1/causes_controller.rb:9: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 11:37:50 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CausesController#index as HTML
+  [1m[36mCause Load (0.6ms)[0m  [1m[34mSELECT  "causes".* FROM "causes" ORDER BY event_date DESC LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCause Load (0.4ms)[0m  [1m[34mSELECT  "causes".* FROM "causes" ORDER BY event_date DESC LIMIT $1[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCause Load (0.4ms)[0m  [1m[34mSELECT  "causes".* FROM "causes" ORDER BY event_date DESC LIMIT $1[0m  [["LIMIT", 11]]
+NameError (undefined local variable or method `causes' for #<Api::V1::CausesController:0x007ffeb0e43a20>
+Did you mean?  @causes):
+  
+app/controllers/api/v1/causes_controller.rb:6:in `index'
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 11:38:46 -0500
+Processing by Api::V1::CausesController#index as HTML
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `ok' for #<Api::V1::CausesController:0x007ffeb2a805f8>):
+  
+app/controllers/api/v1/causes_controller.rb:6:in `index'
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 11:39:11 -0500
+Processing by Api::V1::CausesController#index as HTML
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 11:40:05 -0500
+Processing by Api::V1::CausesController#index as */*
+  [1m[36mCause Load (0.8ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/causes/1" for 127.0.0.1 at 2018-01-15 11:44:27 -0500
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Api::V1::CausesController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/causes/1" for 127.0.0.1 at 2018-01-15 11:45:50 -0500
+Processing by Api::V1::CausesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT  "causes".* FROM "causes" WHERE "causes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 16ms (Views: 0.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 11:56:28 -0500
+Processing by Api::V1::CausesController#index as */*
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/causes" for 127.0.0.1 at 2018-01-15 11:57:49 -0500
+Processing by Api::V1::CausesController#create as */*
+  Parameters: {"name"=>"Samuel Gedaly", "story"=>"This is the story of the first post in json format for a RESTful API", "event_date"=>"2018-01-09", "donations"=>1500, "cause"=>{"name"=>"Samuel Gedaly", "story"=>"This is the story of the first post in json format for a RESTful API", "event_date"=>"2018-01-09", "donations"=>1500}}
+Unpermitted parameters: :name, :story, :event_date, :donations, :cause
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "causes" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2018-01-15 16:57:49.269071"], ["updated_at", "2018-01-15 16:57:49.269071"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/api/v1/causes" for 127.0.0.1 at 2018-01-15 11:58:05 -0500
+Processing by Api::V1::CausesController#create as */*
+  Parameters: {"name"=>"Samuel Gedaly", "story"=>"This is the story of the first post in json format for a RESTful API", "event_date"=>"2018-01-09", "donations"=>1500, "cause"=>{"name"=>"Samuel Gedaly", "story"=>"This is the story of the first post in json format for a RESTful API", "event_date"=>"2018-01-09", "donations"=>1500}}
+Unpermitted parameters: :name, :story, :event_date, :donations, :cause
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "causes" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2018-01-15 16:58:05.458678"], ["updated_at", "2018-01-15 16:58:05.458678"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/api/v1/causes" for 127.0.0.1 at 2018-01-15 11:58:06 -0500
+Processing by Api::V1::CausesController#create as */*
+  Parameters: {"name"=>"Samuel Gedaly", "story"=>"This is the story of the first post in json format for a RESTful API", "event_date"=>"2018-01-09", "donations"=>1500, "cause"=>{"name"=>"Samuel Gedaly", "story"=>"This is the story of the first post in json format for a RESTful API", "event_date"=>"2018-01-09", "donations"=>1500}}
+Unpermitted parameters: :name, :story, :event_date, :donations, :cause
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "causes" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2018-01-15 16:58:06.957144"], ["updated_at", "2018-01-15 16:58:06.957144"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/api/v1/causes" for 127.0.0.1 at 2018-01-15 11:58:07 -0500
+Processing by Api::V1::CausesController#create as */*
+  Parameters: {"name"=>"Samuel Gedaly", "story"=>"This is the story of the first post in json format for a RESTful API", "event_date"=>"2018-01-09", "donations"=>1500, "cause"=>{"name"=>"Samuel Gedaly", "story"=>"This is the story of the first post in json format for a RESTful API", "event_date"=>"2018-01-09", "donations"=>1500}}
+Unpermitted parameters: :name, :story, :event_date, :donations, :cause
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "causes" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2018-01-15 16:58:07.530446"], ["updated_at", "2018-01-15 16:58:07.530446"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/api/v1/causes" for 127.0.0.1 at 2018-01-15 11:58:08 -0500
+Processing by Api::V1::CausesController#create as */*
+  Parameters: {"name"=>"Samuel Gedaly", "story"=>"This is the story of the first post in json format for a RESTful API", "event_date"=>"2018-01-09", "donations"=>1500, "cause"=>{"name"=>"Samuel Gedaly", "story"=>"This is the story of the first post in json format for a RESTful API", "event_date"=>"2018-01-09", "donations"=>1500}}
+Unpermitted parameters: :name, :story, :event_date, :donations, :cause
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "causes" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2018-01-15 16:58:08.006669"], ["updated_at", "2018-01-15 16:58:08.006669"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/api/v1/causes" for 127.0.0.1 at 2018-01-15 11:58:08 -0500
+Processing by Api::V1::CausesController#create as */*
+  Parameters: {"name"=>"Samuel Gedaly", "story"=>"This is the story of the first post in json format for a RESTful API", "event_date"=>"2018-01-09", "donations"=>1500, "cause"=>{"name"=>"Samuel Gedaly", "story"=>"This is the story of the first post in json format for a RESTful API", "event_date"=>"2018-01-09", "donations"=>1500}}
+Unpermitted parameters: :name, :story, :event_date, :donations, :cause
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "causes" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2018-01-15 16:58:08.621506"], ["updated_at", "2018-01-15 16:58:08.621506"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 11:59:41 -0500
+Processing by Api::V1::CausesController#index as */*
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/causes" for 127.0.0.1 at 2018-01-15 12:03:04 -0500
+Processing by Api::V1::CausesController#create as */*
+  Parameters: {"name"=>"Samuel Gedaly", "story"=>"This is the story of the first post in json format for a RESTful API", "event_date"=>"2018-01-09", "donations"=>1500, "cause"=>{"name"=>"Samuel Gedaly", "story"=>"This is the story of the first post in json format for a RESTful API", "event_date"=>"2018-01-09", "donations"=>1500}}
+Unpermitted parameter: :cause
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.6ms)[0m  [1m[32mINSERT INTO "causes" ("name", "story", "event_date", "donations", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Samuel Gedaly"], ["story", "This is the story of the first post in json format for a RESTful API"], ["event_date", "2018-01-09"], ["donations", 1500], ["created_at", "2018-01-15 17:03:04.889491"], ["updated_at", "2018-01-15 17:03:04.889491"]]
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 25ms (Views: 0.6ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 12:03:49 -0500
+Processing by Api::V1::CausesController#index as */*
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/api/v1/causes/4" for 127.0.0.1 at 2018-01-15 12:06:19 -0500
+Processing by Api::V1::CausesController#destroy as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCause Load (0.4ms)[0m  [1m[34mSELECT  "causes".* FROM "causes" WHERE "causes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (11.7ms)[0m  [1m[31mDELETE FROM "causes" WHERE "causes"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 31ms (Views: 0.6ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 12:06:29 -0500
+Processing by Api::V1::CausesController#index as */*
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/api/v1/causes/5" for 127.0.0.1 at 2018-01-15 12:06:44 -0500
+Processing by Api::V1::CausesController#destroy as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT  "causes".* FROM "causes" WHERE "causes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "causes" WHERE "causes"."id" = $1[0m  [["id", 5]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 6.0ms)
+
+
+Started DELETE "/api/v1/causes/6" for 127.0.0.1 at 2018-01-15 12:06:47 -0500
+Processing by Api::V1::CausesController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mCause Load (0.4ms)[0m  [1m[34mSELECT  "causes".* FROM "causes" WHERE "causes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "causes" WHERE "causes"."id" = $1[0m  [["id", 6]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 6.9ms)
+
+
+Started DELETE "/api/v1/causes/7" for 127.0.0.1 at 2018-01-15 12:06:50 -0500
+Processing by Api::V1::CausesController#destroy as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT  "causes".* FROM "causes" WHERE "causes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "causes" WHERE "causes"."id" = $1[0m  [["id", 7]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/api/v1/causes/8" for 127.0.0.1 at 2018-01-15 12:06:54 -0500
+Processing by Api::V1::CausesController#destroy as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mCause Load (0.4ms)[0m  [1m[34mSELECT  "causes".* FROM "causes" WHERE "causes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "causes" WHERE "causes"."id" = $1[0m  [["id", 8]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/api/v1/causes/9" for 127.0.0.1 at 2018-01-15 12:06:58 -0500
+Processing by Api::V1::CausesController#destroy as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT  "causes".* FROM "causes" WHERE "causes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "causes" WHERE "causes"."id" = $1[0m  [["id", 9]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 12:07:00 -0500
+Processing by Api::V1::CausesController#index as */*
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/causes/3" for 127.0.0.1 at 2018-01-15 12:25:15 -0500
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for Api::V1::CausesController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/api/v1/causes/3" for 127.0.0.1 at 2018-01-15 12:25:59 -0500
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for Api::V1::CausesController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"name":"Updated name",
+	"story":"This is the story of an updated cause"
+	"event_date": "2018-01-15",
+    "donations": 48
+}
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 12:26:06 -0500
+Processing by Api::V1::CausesController#index as */*
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/causes/3" for 127.0.0.1 at 2018-01-15 12:26:32 -0500
+  
+SyntaxError (/Users/samuelgedaly/Sites/mycauses/app/controllers/api/v1/causes_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/v1/causes_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"name":"Updated name",
+	"story":"This is the story of an updated cause"
+	"event_date": "2018-01-15",
+    "donations": 48
+}
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 12:26:40 -0500
+  
+SyntaxError (/Users/samuelgedaly/Sites/mycauses/app/controllers/api/v1/causes_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/v1/causes_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 12:27:01 -0500
+  
+SyntaxError (/Users/samuelgedaly/Sites/mycauses/app/controllers/api/v1/causes_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/v1/causes_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 12:27:31 -0500
+Processing by Api::V1::CausesController#index as */*
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 14ms (Views: 8.7ms | ActiveRecord: 3.2ms)
+
+
+Started PUT "/api/v1/causes/3" for 127.0.0.1 at 2018-01-15 12:27:35 -0500
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"name":"Updated name",
+	"story":"This is the story of an updated cause"
+	"event_date": "2018-01-15",
+    "donations": 48
+}
+  
+ActionDispatch::Http::Parameters::ParseError (822: unexpected token at '{
+	"name":"Updated name",
+	"story":"This is the story of an updated cause"
+	"event_date": "2018-01-15",
+    "donations": 48
+}'):
+  
+actionpack (5.1.4) lib/action_dispatch/http/parameters.rb:115:in `rescue in parse_formatted_parameters'
+actionpack (5.1.4) lib/action_dispatch/http/parameters.rb:109:in `parse_formatted_parameters'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:361:in `block in POST'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch_header'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:360:in `POST'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:286:in `_wrapper_enabled?'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:235:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 12:27:47 -0500
+Processing by Api::V1::CausesController#index as */*
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/causes/3" for 127.0.0.1 at 2018-01-15 12:29:26 -0500
+Processing by Api::V1::CausesController#update as */*
+  Parameters: {"name"=>"Updated name", "story"=>"This is the story of an updated cause", "event_date"=>"2018-01-15", "donations"=>48, "id"=>"3", "cause"=>{"name"=>"Updated name", "story"=>"This is the story of an updated cause", "event_date"=>"2018-01-15", "donations"=>48}}
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT  "causes".* FROM "causes" WHERE "causes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Unpermitted parameters: :id, :cause
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (12.0ms)[0m  [1m[33mUPDATE "causes" SET "name" = $1, "story" = $2, "updated_at" = $3 WHERE "causes"."id" = $4[0m  [["name", "Updated name"], ["story", "This is the story of an updated cause"], ["updated_at", "2018-01-15 17:29:26.121968"], ["id", 3]]
+  [1m[35m (45.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 64ms (Views: 0.6ms | ActiveRecord: 57.6ms)
+
+
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 12:29:30 -0500
+Processing by Api::V1::CausesController#index as */*
+  [1m[36mCause Load (0.4ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/causes/1" for 127.0.0.1 at 2018-01-15 12:31:25 -0500
+Processing by Api::V1::CausesController#update as */*
+  Parameters: {"name"=>"Elmira Homenick", "story"=>"Dinner usually refers to the most significant and important meal of the day, which can be the noon or the evening meal. However, the term “dinner” can have many different meanings depending on the culture; it may mean a meal of any size eaten at any time of the day.[1][2]Historically, it referred to the first meal of the day, eaten around noon, and is still sometimes used for a noon-time meal, particularly if it is a large or main meal. The meaning as the evening meal, generally the largest of the day, is becoming a standard in many parts of the English.", "event_date"=>"2018-01-15", "donations"=>57, "id"=>"1", "cause"=>{"name"=>"Elmira Homenick", "story"=>"Dinner usually refers to the most significant and important meal of the day, which can be the noon or the evening meal. However, the term “dinner” can have many different meanings depending on the culture; it may mean a meal of any size eaten at any time of the day.[1][2]Historically, it referred to the first meal of the day, eaten around noon, and is still sometimes used for a noon-time meal, particularly if it is a large or main meal. The meaning as the evening meal, generally the largest of the day, is becoming a standard in many parts of the English.", "event_date"=>"2018-01-15", "donations"=>57}}
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT  "causes".* FROM "causes" WHERE "causes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: :id, :cause
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "causes" SET "story" = $1, "updated_at" = $2 WHERE "causes"."id" = $3[0m  [["story", "Dinner usually refers to the most significant and important meal of the day, which can be the noon or the evening meal. However, the term “dinner” can have many different meanings depending on the culture; it may mean a meal of any size eaten at any time of the day.[1][2]Historically, it referred to the first meal of the day, eaten around noon, and is still sometimes used for a noon-time meal, particularly if it is a large or main meal. The meaning as the evening meal, generally the largest of the day, is becoming a standard in many parts of the English."], ["updated_at", "2018-01-15 17:31:25.257659"], ["id", 1]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-15 12:31:31 -0500
+Processing by Api::V1::CausesController#index as */*
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
