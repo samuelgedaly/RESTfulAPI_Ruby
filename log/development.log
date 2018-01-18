@@ -529,3 +529,95 @@ Processing by Api::V1::CausesController#index as */*
 Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-17 17:04:40 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CausesController#index as */*
+  [1m[36mCause Load (25.6ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 62ms (Views: 10.6ms | ActiveRecord: 48.0ms)
+
+
+Started DELETE "/api/v1/causes/3" for 127.0.0.1 at 2018-01-17 17:05:32 -0500
+Processing by Api::V1::CausesController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mCause Load (2.7ms)[0m  [1m[34mSELECT  "causes".* FROM "causes" WHERE "causes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "causes" WHERE "causes"."id" = $1[0m  [["id", 3]]
+  [1m[35m (47.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 65ms (Views: 0.6ms | ActiveRecord: 55.0ms)
+
+
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-17 17:05:41 -0500
+Processing by Api::V1::CausesController#index as */*
+  [1m[36mCause Load (0.5ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/api/v1/causes" for 127.0.0.1 at 2018-01-17 17:06:15 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/api/v1/causes"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-17 17:07:37 -0500
+Processing by Api::V1::CausesController#index as HTML
+  [1m[36mCause Load (0.4ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-01-17 17:07:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/causes/1" for 127.0.0.1 at 2018-01-17 17:07:56 -0500
+Processing by Api::V1::CausesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT  "causes".* FROM "causes" WHERE "causes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/causes" for 127.0.0.1 at 2018-01-17 17:08:04 -0500
+Processing by Api::V1::CausesController#index as HTML
+  [1m[36mCause Load (0.3ms)[0m  [1m[34mSELECT "causes".* FROM "causes" ORDER BY event_date DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
